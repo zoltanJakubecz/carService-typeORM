@@ -4,6 +4,7 @@ node_modules/
 build/
 tmp/
 temp/
+.env
 
 
 # Created by https://www.toptal.com/developers/gitignore/api/macos
