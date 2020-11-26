@@ -1,3 +1,4 @@
+require('dotenv').config();
 import "reflect-metadata";
 import { createConnection } from "typeorm";
 import * as express from "express";
@@ -9,11 +10,11 @@ import { CarItem } from "./entity/CarItem";
 
 createConnection({
     type: "postgres",
-    host: "localhost",
+    host: process.env.DB_HOST,
     port: 5432,
-    username: "postgres",
-    password: "postgres",
-    database: "test",
+    username: process.env.DB_USER,
+    password: process.env.DB_PASS,
+    database: process.env.DB_DATABASE,
     entities: [
         User,
         CarItem
