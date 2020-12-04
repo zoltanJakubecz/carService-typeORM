@@ -1,6 +1,6 @@
-import {getRepository} from "typeorm";
-import {NextFunction, Request, Response} from "express";
-import {CarItem} from "../entity/CarItem";
+import { getRepository } from "typeorm";
+import { NextFunction, Request, Response } from "express";
+import { CarItem } from "../entity/CarItem";
 
 export class CarController{
 
